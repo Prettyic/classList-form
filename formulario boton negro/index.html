@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="modo">Modo</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="block_form">
+        <h3>Registro</h3>
+        <form>
+            <fieldset>
+                <legend> Nombres</legend>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+            </fieldset>
+
+            <fieldset>
+                <legend> Apellido</legend>
+                <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+            </fieldset>
+                <fieldset>
+                    <legend>Nombre de usuario</legend>
+                    <input type="text" id="usuario" placeholder="Ingresa tu usuario">
+                </fieldset>
+                <fieldset>
+                    <legend>Correo Electrónico</legend>
+                    <input type="mail" id="correo" placeholder="Ingresa tu correo">
+                </fieldset>
+                <fieldset>
+                    <legend> contraseña</legend>
+                    <input type="mail" id="contraseña" placeholder="Ingresa tu contraseña">
+                </fieldset>
+                
+                <fieldset class="cheque">
+                    <input type="checkbox"  required target="_blank">
+                    <p>Acepto los términos y condiciones</p>   
+                </fieldset>
+                <div id="contenedor_boton">
+                    <button type="submit">Iniciar sesión</button>
+                </div>
+
+                <button id="color" type="buttton" onclick="activarclase()">activar</button>    
+            </div>
+            
+         </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

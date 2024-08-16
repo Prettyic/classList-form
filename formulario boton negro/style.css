@@ -1,0 +1,110 @@
+:root{
+    --color-body:#b2b2b4;
+    --color-text:black;
+    --color-btnContinuar:rgb(39, 147, 255);
+    --color-header:#f8e0e4;
+}
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing:border-box ;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color:var(--color-body);
+    color: var(--color-text);
+    transition: all 1s ease;
+}
+header,nav { 
+    width: 100%;
+    background-color: var(--color-header);
+}
+nav{
+    display: flex;
+    justify-content: right;
+}
+nav ul{
+    margin-right: 40px; 
+    margin-top: 10px;
+}
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h2{
+   color: var(--color-btnContinuar);
+}
+/* formulario */
+#block_form{
+    width: 40%;
+    padding: 1pc;
+    margin: 100px 0; /*Para centrar el formulario verticalmente.*/
+    border-radius: 10px;
+    transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#block_form form fieldset{
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+form fieldset select, input{
+    width: 90%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+/* para que los input no se selecionen cuado hagamos clik */
+form fieldset select, input:focus{
+    outline: none;
+}
+#botones{
+    display: flex;
+    gap: 1pc;
+    justify-content: center;
+    margin-top: 20px;
+}
+#botones button{
+    width: 20%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+#continuar{
+    background-color: var(--color-btnContinuar);
+    color: white;
+}
+
+.cheque{
+    display: flex;
+    align-items:center ;
+}
+.cheque input{
+    width: 20px;
+    height: 20px;
+}
+.cheque p {
+    width: 250px;
+    margin-left: 10px;
+}
+
+#color{
+    background-color: red;
+}
+.azul{
+    background-color: rgb(203, 43, 243);
+}
+.azul #color{
+    background-color: blue;
+}
+
+#contenedor_boton button{
+   width: 100%;
+   padding: 10px 0;
+}
